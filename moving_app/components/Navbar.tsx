@@ -1,5 +1,6 @@
 import Login from "@/app/(auth-pages)/sign-in/page";
 import Link from "next/link";
+import { ProfileButton } from "@/components/profileButton/profile-button";
 
 export default function Navbar({ setSearchTerm }) {
   return (
