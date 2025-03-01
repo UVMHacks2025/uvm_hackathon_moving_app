@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Footer from "@/components/Footer";
 import ItemList from "@/components/itemList/ItemList";
@@ -9,8 +9,8 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
   return (
     <>
-      <Navbar setSearchTerm = {setSearchTerm}/>
-      <ItemList searchTerm = {searchTerm}/>
+      <Navbar setSearchTerm={setSearchTerm} />
+      <ItemList searchTerm={searchTerm} />
     </>
   );
 }
