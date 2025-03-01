@@ -29,6 +29,16 @@ export default function ItemCard({ listing }) {
           <p>Price: ${listing.value}</p>
           <p>{listing.itemDescrip}</p>
         </CardContent>
+        {listing.tags.length > 0 && (
+          <CardContent>
+            <p className="text-sm text-gray-500">Tags:</p>
+            <div className="flex flex-wrap gap-1 mt-1">
+              {listing.tags.map((tag, index) => (
+                tag && <span key={index} className="bg-gray-100 px-2 py-1 text-xs rounded">{tag}</span>
+              ))}
+            </div>
+          </CardContent>
+        )}
         <CardFooter>
           <Button>Contact {listing.owner}</Button>
         </CardFooter>
