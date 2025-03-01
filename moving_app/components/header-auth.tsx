@@ -5,6 +5,8 @@ import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { createClient } from "@/utils/supabase/server";
 
+import {ProfileButton} from "@/components/profileButton/profile-button";
+
 export default async function AuthButton() {
   const supabase = await createClient();
 
@@ -65,6 +67,7 @@ export default async function AuthButton() {
       <Button asChild size="sm" variant={"default"}>
         <Link href="/sign-up">Sign up</Link>
       </Button>
+      <ProfileButton/>
     </div>
   );
 }

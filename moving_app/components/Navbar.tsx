@@ -1,4 +1,7 @@
-export default function Navbar({ setSearchTerm }){
+import { ProfileButton } from "./profileButton/profile-button";
+import { useRouter } from "next/router";
+
+export default function Navbar({setSearchTerm}){
     return(
         <>
             <div>
@@ -7,6 +10,10 @@ export default function Navbar({ setSearchTerm }){
                     placeholder="Search" 
                     onChange={(e) => setSearchTerm(e.target.value)}
                 />
+                <a href="/home">
+                    <h1>Marketplace7</h1>
+                </a>
+                <ProfileButton/>
             </div>
         </>
     );
