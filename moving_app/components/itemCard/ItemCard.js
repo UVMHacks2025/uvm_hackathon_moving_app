@@ -7,16 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-//import { useState } from "react";
-
-export default function ItemCard({ listing }) {
-  //const [name] = useState(null);
-  const name = "Couch";
-  const imgURL =
-    "https://t4.ftcdn.net/jpg/00/29/79/51/360_F_29795157_gLLeeTiFDsqno207woilLAq0jeOyOqdu.jpg";
-  const value = 100;
-  const itemDescrip = "This is a couch.";
-
+export default function ItemCard({ users, listing, userInfo }) {
   return (
     <>
       <Card>
@@ -25,9 +16,9 @@ export default function ItemCard({ listing }) {
           <CardDescription></CardDescription>
         </CardHeader>
         <CardContent>
-          <img src={listing.imgURL} alt="Item Image" />
-          <p>Price: ${listing.value}</p>
-          <p>{listing.itemDescrip}</p>
+          <img src={listing.photo} alt="Item Image" />
+          <p>Price: ${listing.price}</p>
+          <p>{listing.description}</p>
         </CardContent>
         {listing.tags.length > 0 && (
           <CardContent>
@@ -39,8 +30,13 @@ export default function ItemCard({ listing }) {
             </div>
           </CardContent>
         )}
-        <CardFooter>
-          <Button>Contact {listing.owner}</Button>
+        <CardFooter className="flex justify-between">
+          <Button
+            onClick={() => (window.location.href = `mailto:${userInfo.email}`)}
+          >
+            Contact {userInfo.name}
+          </Button>
+          <Button variant="outline">Add to Liked</Button>
         </CardFooter>
       </Card>
     </>
