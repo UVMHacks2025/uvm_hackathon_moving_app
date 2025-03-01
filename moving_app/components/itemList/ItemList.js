@@ -1,16 +1,18 @@
 import ItemCard from "../itemCard/ItemCard";
-import listings from "../../lib/item-listings.json";
+//import listings from "../../lib/item-listings.json";
+import seed from "../../lib/seed.json";
 
 export default function ItemList({searchTerm}){
-    let listingsTemp = [...listings];
+    let listingsTemp = [...seed.items];
     if (searchTerm) {
-        listingsTemp = listings.filter((listing) => listing.tags.includes(searchTerm));
+        listingsTemp = listingsTemp.filter((listing) => listing.tags.includes(searchTerm));
     }
     
 
     const items = listingsTemp.map((listing) => (
         <ItemCard
             key={listing.id}
+            users={seed.users}
             listing={listing}
         />
     ));
