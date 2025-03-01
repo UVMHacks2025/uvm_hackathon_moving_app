@@ -5,7 +5,6 @@ import seed from "../../lib/seed.json";
 export default function ItemList({searchTerm}){
     let listingsTemp = [...seed.items];
     let userInfo = [...seed.users];
-    console.log(userInfo);
     if (searchTerm) {
         listingsTemp = listingsTemp.filter((listing) => listing.tags.includes(searchTerm));
     }
