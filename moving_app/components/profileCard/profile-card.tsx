@@ -1,32 +1,48 @@
-/**
- * 
- * profile card displays user information:
- * - name
- * - bio
- * - contact info:
- *      - email
- *      - phone
- * 
- */
+import * as React from "react";
+import { cn } from "@/lib/utils";
+import {
+  Card,
+  CardHeader,
+  CardFooter,
+  CardTitle,
+  CardDescription,
+  CardContent,
+} from "../ui/card";
+import { Button } from "../ui/button";
 
-import * as React from "react"
-import { cn } from "@/lib/utils"
-import { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from "../ui/card"
+const imageLink =
+  "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"; // Direct image URL
 
-const imageLink = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ADefault_pfp.jpg&psig=AOvVaw1o7QtQeKeSGCj_EJHzkQ2z&ust=1740935627766000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMDV896w6YsDFQAAAAAdAAAAABAE"
-  
-type CardProps = React.ComponentProps<typeof Card>
-export function ProfileCard({ className, ...props }: CardProps) {
-    return (
-    <Card className={cn("w-[380px]", className)} {...props}>
-        <CardHeader>
-        <CardTitle>User</CardTitle>
-        <img src={imageLink}/>
-        </CardHeader>
-        <CardContent className="grid gap-4">
-        <div>Hi my name is Quinn. I am based out of Middlebury, Atlantis and am in the market for more fish. Just for the halibut!</div>
-        </CardContent>
-        <CardFooter>qotto@atlantis.sea - (555)555-555</CardFooter>
+// Define the user type
+type User = {
+  name: string;
+  bio: string;
+  email: string;
+};
+
+// Extend CardProps to include user data
+type ProfileCardProps = React.ComponentProps<typeof Card> & {
+  user: User;
+};
+
+export function ProfileCard({ className, user, ...props }: ProfileCardProps) {
+  console.log(user);
+  return (
+    <Card className={cn("w-[380px] p-4", className)} {...props}>
+      <CardHeader className="text-center">
+        <img
+          src={imageLink}
+          alt={`${user.name}'s profile`}
+          className="w-24 h-24 rounded-full mx-auto mb-2"
+        />
+        <CardTitle>{user.name}</CardTitle>
+        <CardDescription>{user.bio}</CardDescription>
+      </CardHeader>
+      <CardContent className="grid gap-2">
+        <Button onClick={() => (window.location.href = `mailto:${user.email}`)}>
+          Contact {user.name}
+        </Button>
+      </CardContent>
     </Card>
-    )
-}    
+  );
+}

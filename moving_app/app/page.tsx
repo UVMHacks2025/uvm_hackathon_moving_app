@@ -11,7 +11,8 @@
 // <<<<<<< HEAD
 // <<<<<<< HEAD
 //         <Navbar setSearchTerm=''/>
-//         <ItemList 
+//         <ItemList
+//         <ItemList
 //           searchTerm={""}/>
 //         <Footer />
 // =======
