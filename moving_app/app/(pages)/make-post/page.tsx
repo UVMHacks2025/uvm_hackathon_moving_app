@@ -14,6 +14,7 @@ import Link from "next/link";
 import ItemCard from "@/components/itemCard/ItemCard";
 
 export default function MakePost() {
+  const [searchTerm, setSearchTerm] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     imgURL: "",
@@ -49,6 +50,7 @@ export default function MakePost() {
 
   return (
     <>
+    <Navbar setSearchTerm={setSearchTerm} />
       <div className="container mx-auto p-6">
         <h1 className="text-2xl font-bold mb-6">Create New Listing</h1>
         
