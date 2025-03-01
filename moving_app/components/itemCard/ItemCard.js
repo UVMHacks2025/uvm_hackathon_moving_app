@@ -13,18 +13,21 @@ import {
 import { Button } from "@/components/ui/button";
 export default function ItemCard({ users, listing, userInfo }) {
   const [showProfile, setShowProfile] = useState(false);
+  let contactButtonStyle = showProfile ? "flex justify-between ml-10" : "flex-col";
 
   return (
     <>
       <Card>
         <CardHeader>
           <CardTitle>{listing.name}</CardTitle>
-          <CardDescription></CardDescription>
+          <CardDescription>
+            <p>Price: ${listing.price}</p>
+            <p>{listing.description}</p>
+          </CardDescription>
         </CardHeader>
-        <CardContent>
-          <img src={listing.photo} alt="Item Image" width="200" height="200"/>
-          <p>Price: ${listing.price}</p>
-          <p>{listing.description}</p>
+        <CardContent className={contactButtonStyle}>
+          <img src={listing.photo} alt="Item Image" max="200" height="200"/>
+          <div className={contactButtonStyle}>{showProfile ? <ProfileCard user={userInfo} /> : <></>}</div>
         </CardContent>
         {listing.tags.length > 0 && (
           <CardContent>
@@ -46,11 +49,7 @@ export default function ItemCard({ users, listing, userInfo }) {
         )}
         <CardFooter className="flex justify-between">
           <div>
-            {showProfile ? (
-              <ProfileCard user={userInfo} />
-            ) : (
-              <Button onClick={() => setShowProfile(true)}>Contact</Button>
-            )}
+            {!showProfile ? <Button onClick={() => setShowProfile(true)}>Contact</Button> : <></>}
           </div>
           <Button variant="outline">Add to Liked</Button>
         </CardFooter>

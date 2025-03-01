@@ -23,5 +23,5 @@ export default function ItemList({ searchTerm }) {
       />
     );
   });
-  return <div className="flex flex-col gap-y-8">{items}</div>;
+  return <div className="container flex flex-col gap-y-8 px-8">{items}</div>;
 }
