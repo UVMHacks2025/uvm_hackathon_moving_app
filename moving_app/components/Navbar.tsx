@@ -1,5 +1,13 @@
-export default function Navbar(){
+export default function Navbar({ setSearchTerm }){
     return(
-        <p>Navbar</p>
+        <>
+            <div>
+                <input 
+                    type="text" 
+                    placeholder="Search" 
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                />
+            </div>
+        </>
     );
 }
