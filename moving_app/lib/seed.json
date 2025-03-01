@@ -5,35 +5,35 @@
         "name": "jimmy_himmle",
         "email": "test@gmail.com",
         "id": 1234,
-        "bio": "A person",
+        "bio": "Selling my stuff! Hit me up",
         "savedItems": ["item1", "item2", "item3", "item4"]
       },
       {
         "name": "john_doe",
         "email": "john.doe@gmail.com",
         "id": 5678,
-        "bio": "An avid shopper",
+        "bio": "An avid shopper and an avid buyer!",
         "savedItems": ["item5", "item6"]
       },
       {
         "name": "mary_smith",
         "email": "mary.smith@yahoo.com",
         "id": 9101,
-        "bio": "Loves vintage furniture",
+        "bio": "Loves vintage furniture. NO NEGOTIATIONS",
         "savedItems": ["item2", "item8", "item9"]
       },
       {
         "name": "alex_james",
-        "email": "alex.jones@hotmail.com",
+        "email": "alex.james@hotmail.com",
         "id": 1122,
-        "bio": "A minimalist enthusiast",
+        "bio": "A minimalist enthusiast and I want to sell everything",
         "savedItems": ["item7", "item2", "item10"]
       },
       {
         "name": "lucy_brown",
         "email": "lucy.brown@outlook.com",
         "id": 3344,
-        "bio": "Interior designer",
+        "bio": "Interior designer leaving the country. Everything must go!",
         "savedItems": ["item1", "item6", "item5"]
       }
     ],
@@ -43,7 +43,7 @@
         "name": "chair",
         "price": 100,
         "tags": ["household", "well-used", "outdoors"],
-        "description": "A good chair",
+        "description": "A good chair... totally clean too!",
         "sellerId": 1234,
         "photo": "https://t4.ftcdn.net/jpg/03/21/42/87/240_F_321428779_l8oQrLjoqZM5TIW22IAapbpOg0wgKufw.jpg"
       },
@@ -52,7 +52,7 @@
         "name": "table",
         "price": 150,
         "tags": ["household", "new", "indoor"],
-        "description": "A sturdy table",
+        "description": "A sturdy table, good for pong, dinner, or studying",
         "sellerId": 5678,
         "photo": "https://m.media-amazon.com/images/I/51zvHEqiKOL.jpg"
       },
@@ -61,7 +61,7 @@
         "name": "sofa",
         "price": 350,
         "tags": ["living-room", "comfortable", "modern"],
-        "description": "A cozy sofa",
+        "description": "I have spent many nights on this sofa, it's time for it to go!",
         "sellerId": 9101,
         "photo": "https://t4.ftcdn.net/jpg/04/23/65/57/240_F_423655780_VSZ03nlUy0s1RP39cRWUHLj2bbWi2ebO.jpg"
       },
@@ -70,7 +70,7 @@
         "name": "lamp",
         "price": 50,
         "tags": ["lighting", "decorative", "modern"],
-        "description": "A stylish lamp",
+        "description": "Selling this, its in great condition, just doesnt fit my room anymore",
         "sellerId": 1234,
         "photo": "https://t3.ftcdn.net/jpg/00/53/32/96/240_F_53329680_ZNZQ8cVWthJJunGAbTBuCvp6nWDKFKSe.jpg"
       },
@@ -79,7 +79,7 @@
         "name": "bookshelf",
         "price": 120,
         "tags": ["furniture", "wooden", "indoor"],
-        "description": "A wooden bookshelf",
+        "description": "A wooden bookshelf, plain and simple",
         "sellerId": 5678,
         "photo": "https://t3.ftcdn.net/jpg/09/66/06/58/240_F_966065837_uDqmbq7V5RnkIrGuCMQmCGimd7WqvSv0.jpg"
       }
