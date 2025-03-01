@@ -1,5 +1,9 @@
+import styles from "./ItemList.module.css";
+
 export default function ItemList(){
     return(
-        <p>Here are the items!</p>
+        <div className={styles.ItemList}>
+            Items go here!
+        </div>
     );
 }
