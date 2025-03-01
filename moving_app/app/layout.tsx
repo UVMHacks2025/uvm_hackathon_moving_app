@@ -5,6 +5,9 @@ import { hasEnvVars } from "@/utils/supabase/check-env-vars";
 import { Geist } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
+import Login from "./(pages)/loginPage/pages";
+import App from "./(pages)/appPage/pages";
+
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -26,7 +29,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
+
+  /*return (
     <html lang="en" className={geistSans.className} suppressHydrationWarning>
       <body className="bg-background text-foreground">
         <ThemeProvider
@@ -56,6 +60,20 @@ export default function RootLayout({
             </div>
           </main>
         </ThemeProvider>
+      </body>
+    </html>
+  );*/
+
+  // ToDo: add functionality to check whether user is logged in
+  let userLoggedIn = true;
+  let page = (userLoggedIn) ? <App /> : <Login />;
+
+  return (
+    <html>
+      <head>
+      </head>
+      <body>
+        {page}
       </body>
     </html>
   );
