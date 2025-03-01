@@ -32,18 +32,6 @@ export default function Navbar({ setSearchTerm }) {
             Make a Post
           </Link>
 
-          <Link
-            href="/sign-in"
-            className="text-green-700 font-semibold hover:underline"
-          >
-            Sign in
-          </Link>
-          <Link
-            href="/sign-up"
-            className="text-green-700 font-semibold hover:underline"
-          >
-            Sign up
-          </Link>
         </div>
       </div>
     </div>
