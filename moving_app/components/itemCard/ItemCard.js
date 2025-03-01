@@ -17,7 +17,7 @@ export default function ItemCard({ users, listing }) {
   const value = 100;
   const itemDescrip = "This is a couch.";
 
-
+  
 
   return (
     <>
