@@ -9,6 +9,7 @@ export default async function Home() {
         {/* {hasEnvVars ? <SignUpUserSteps /> : <LandingPage />} */}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Navbar setSearchTerm=''/>
         <ItemList 
           searchTerm={""}/>
@@ -23,6 +24,11 @@ export default async function Home() {
         <ItemList searchTerm={""} />
         <Footer /> */}
 >>>>>>> 14c1dc7 (header)
+=======
+        {/* <Navbar />
+        <ItemList searchTerm={""} />
+        <Footer /> */}
+>>>>>>> dev
       </main>
     </>
   );
