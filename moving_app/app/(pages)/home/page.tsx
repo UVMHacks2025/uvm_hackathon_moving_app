@@ -5,7 +5,9 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <>
-      <ItemList />
+      <div className="mx-80">
+        <ItemList searchTerm={"modern"} />
+      </div>
     </>
   );
 }
