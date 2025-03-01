@@ -1,137 +1,128 @@
-   
 {
-    "users": [
-      {
-        "name": "jimmy_himmle",
-        "email": "test@gmail.com",
-        "id": 1234,
-        "bio": "Selling my stuff! Hit me up",
-        "savedItems": ["item1", "item2", "item3", "item4"]
-      },
-      {
-        "name": "john_doe",
-        "email": "john.doe@gmail.com",
-        "id": 5678,
-        "bio": "An avid shopper and an avid buyer!",
-        "savedItems": ["item5", "item6"]
-      },
-      {
-        "name": "mary_smith",
-        "email": "mary.smith@yahoo.com",
-        "id": 9101,
-        "bio": "Loves vintage furniture. NO NEGOTIATIONS",
-        "savedItems": ["item2", "item8", "item9"]
-      },
-      {
-        "name": "alex_james",
-        "email": "alex.james@hotmail.com",
-        "id": 1122,
-        "bio": "A minimalist enthusiast and I want to sell everything",
-        "savedItems": ["item7", "item2", "item10"]
-      },
-      {
-        "name": "lucy_brown",
-        "email": "lucy.brown@outlook.com",
-        "id": 3344,
-        "bio": "Interior designer leaving the country. Everything must go!",
-        "savedItems": ["item1", "item6", "item5"]
-      }
-    ],
-    "items": [
-      {
-        "id": 1342,
-        "name": "chair",
-        "price": 100,
-        "tags": ["household", "well-used", "outdoors"],
-        "description": "A good chair... totally clean too!",
-        "sellerId": 1234,
-        "photo": "https://t4.ftcdn.net/jpg/03/21/42/87/240_F_321428779_l8oQrLjoqZM5TIW22IAapbpOg0wgKufw.jpg"
-      },
-      {
-        "id": 1456,
-        "name": "table",
-        "price": 150,
-        "tags": ["household", "new", "indoor"],
-        "description": "A sturdy table, good for pong, dinner, or studying",
-        "sellerId": 5678,
-        "photo": "https://m.media-amazon.com/images/I/51zvHEqiKOL.jpg"
-      },
-      {
-        "id": 1789,
-        "name": "sofa",
-        "price": 350,
-        "tags": ["living-room", "comfortable", "modern"],
-        "description": "I have spent many nights on this sofa, it's time for it to go!",
-        "sellerId": 9101,
-        "photo": "https://t4.ftcdn.net/jpg/04/23/65/57/240_F_423655780_VSZ03nlUy0s1RP39cRWUHLj2bbWi2ebO.jpg"
-      },
-      {
-        "id": 1910,
-        "name": "lamp",
-        "price": 50,
-        "tags": ["lighting", "decorative", "modern"],
-        "description": "Selling this, its in great condition, just doesnt fit my room anymore",
-        "sellerId": 1234,
-        "photo": "https://t3.ftcdn.net/jpg/00/53/32/96/240_F_53329680_ZNZQ8cVWthJJunGAbTBuCvp6nWDKFKSe.jpg"
-      },
-      {
-        "id": 2021,
-        "name": "bookshelf",
-        "price": 120,
-        "tags": ["furniture", "wooden", "indoor"],
-        "description": "A wooden bookshelf, plain and simple",
-        "sellerId": 5678,
-        "photo": "https://t3.ftcdn.net/jpg/09/66/06/58/240_F_966065837_uDqmbq7V5RnkIrGuCMQmCGimd7WqvSv0.jpg"
-      }
-    ],
-    "tags": [
-      {
-        "value": "household",
-        "householdItems": [1342, 1456]
-      },
-      {
-        "value": "well-used",
-        "householdItems": [1342]
-      },
-      {
-        "value": "outdoors",
-        "householdItems": [1342]
-      },
-      {
-        "value": "new",
-        "householdItems": [1456]
-      },
-      {
-        "value": "living-room",
-        "householdItems": [1789]
-      },
-      {
-        "value": "comfortable",
-        "householdItems": [1789]
-      },
-      {
-        "value": "modern",
-        "householdItems": [1789, 1910]
-      },
-      {
-        "value": "lighting",
-        "householdItems": [1910]
-      },
-      {
-        "value": "decorative",
-        "householdItems": [1910]
-      },
-      {
-        "value": "furniture",
-        "householdItems": [2021]
-      },
-      {
-        "value": "wooden",
-        "householdItems": [2021]
-      },
-      {
-        "value": "indoor",
-        "householdItems": [1456, 2021]
-      }
-    ]
-  }
+  "users": [
+    {
+      "name": "jimmy_himmle",
+      "email": "test@gmail.com",
+      "id": 1234,
+      "bio": "Selling my stuff! Hit me up",
+      "savedItems": ["item1", "item2", "item3", "item4"]
+    },
+    {
+      "name": "john_doe",
+      "email": "john.doe@gmail.com",
+      "id": 5678,
+      "bio": "An avid shopper and an avid buyer!",
+      "savedItems": ["item5", "item6"]
+    },
+    {
+      "name": "mary_smith",
+      "email": "mary.smith@yahoo.com",
+      "id": 9101,
+      "bio": "Loves vintage furniture. NO NEGOTIATIONS",
+      "savedItems": ["item2", "item8", "item9"]
+    },
+    {
+      "name": "alex_james",
+      "email": "alex.james@hotmail.com",
+      "id": 1122,
+      "bio": "A minimalist enthusiast and I want to sell everything",
+      "savedItems": ["item7", "item2", "item10"]
+    },
+    {
+      "name": "lucy_brown",
+      "email": "lucy.brown@outlook.com",
+      "id": 3344,
+      "bio": "Interior designer leaving the country. Everything must go!",
+      "savedItems": ["item1", "item6", "item5"]
+    }
+  ],
+  "items": [
+    {
+      "id": 1342,
+      "name": "chair",
+      "price": 100,
+      "tags": ["household", "well-used", "outdoors"],
+      "description": "A good chair... totally clean too!",
+      "sellerId": 1234,
+      "photo": "https://t4.ftcdn.net/jpg/03/21/42/87/240_F_321428779_l8oQrLjoqZM5TIW22IAapbpOg0wgKufw.jpg"
+    },
+
+    {
+      "id": 1789,
+      "name": "sofa",
+      "price": 350,
+      "tags": ["living-room", "comfortable", "modern"],
+      "description": "I have spent many nights on this sofa, it's time for it to go!",
+      "sellerId": 9101,
+      "photo": "https://t4.ftcdn.net/jpg/04/23/65/57/240_F_423655780_VSZ03nlUy0s1RP39cRWUHLj2bbWi2ebO.jpg"
+    },
+    {
+      "id": 1910,
+      "name": "lamp",
+      "price": 50,
+      "tags": ["lighting", "decorative", "modern"],
+      "description": "Selling this, its in great condition, just doesnt fit my room anymore",
+      "sellerId": 1234,
+      "photo": "https://t3.ftcdn.net/jpg/00/53/32/96/240_F_53329680_ZNZQ8cVWthJJunGAbTBuCvp6nWDKFKSe.jpg"
+    },
+    {
+      "id": 2021,
+      "name": "bookshelf",
+      "price": 120,
+      "tags": ["furniture", "wooden", "indoor"],
+      "description": "A wooden bookshelf, plain and simple",
+      "sellerId": 5678,
+      "photo": "https://t3.ftcdn.net/jpg/09/66/06/58/240_F_966065837_uDqmbq7V5RnkIrGuCMQmCGimd7WqvSv0.jpg"
+    }
+  ],
+  "tags": [
+    {
+      "value": "household",
+      "householdItems": [1342, 1456]
+    },
+    {
+      "value": "well-used",
+      "householdItems": [1342]
+    },
+    {
+      "value": "outdoors",
+      "householdItems": [1342]
+    },
+    {
+      "value": "new",
+      "householdItems": [1456]
+    },
+    {
+      "value": "living-room",
+      "householdItems": [1789]
+    },
+    {
+      "value": "comfortable",
+      "householdItems": [1789]
+    },
+    {
+      "value": "modern",
+      "householdItems": [1789, 1910]
+    },
+    {
+      "value": "lighting",
+      "householdItems": [1910]
+    },
+    {
+      "value": "decorative",
+      "householdItems": [1910]
+    },
+    {
+      "value": "furniture",
+      "householdItems": [2021]
+    },
+    {
+      "value": "wooden",
+      "householdItems": [2021]
+    },
+    {
+      "value": "indoor",
+      "householdItems": [1456, 2021]
+    }
+  ]
+}
