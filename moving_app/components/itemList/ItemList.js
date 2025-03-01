@@ -6,7 +6,7 @@ export default function ItemList({searchTerm}){
     let listingsTemp = [...seed.items];
     let userInfo = [...seed.users];
     if (searchTerm) {
-        listingsTemp = listingsTemp.filter((listing) => listing.tags.includes(searchTerm));
+        listingsTemp = listingsTemp.filter((listing) => listing.tags.includes(searchTerm) || listing.name === searchTerm);
     }
     
     const items = listingsTemp.map((listing) => {
