@@ -19,7 +19,18 @@ export default function Navbar({ setSearchTerm }) {
           >
             MarketPlace7
           </Link>
-
+          <Link
+            href="/sign-in"
+            className="text-green-700 font-semibold hover:underline"
+          >
+            Sign In
+          </Link>
+          <Link
+            href="/sign-up"
+            className="text-green-700 font-semibold hover:underline"
+          >
+            Sign Up
+          </Link>
         </div>
       </div>
     </div>
