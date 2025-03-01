@@ -13,21 +13,17 @@ export default function Navbar({ setSearchTerm }) {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         <div className="space-x-8">
-          <a href="/home">
-            <h1>Marketplace7</h1>
-          </a>
-          <ProfileButton />
           <Link
             href="/home"
             className="text-green-700 font-semibold hover:underline"
           >
-            Home
+            MarketPlace7
           </Link>
           <Link
             href="/bio"
             className="text-green-700 font-semibold hover:underline"
           >
-            Bio
+            Profile
           </Link>
           <Link
             href="/make-post"
