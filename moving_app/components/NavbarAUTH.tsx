@@ -2,7 +2,7 @@ import Login from "@/app/(auth-pages)/sign-in/page";
 import Link from "next/link";
 import { ProfileButton } from "@/components/profileButton/profile-button";
 
-export default function Navbar({ setSearchTerm }) {
+export default function NavbarAUTH({ setSearchTerm }) {
   return (
     <div className="py-8 px-8 ">
       <div className="py-2 flex justify-between items-center">
@@ -14,12 +14,23 @@ export default function Navbar({ setSearchTerm }) {
         />
         <div className="space-x-8">
           <Link
-            href="/home"
+            href="/protected"
             className="text-green-700 font-semibold hover:underline"
           >
             MarketPlace7
           </Link>
-
+          <Link
+            href="/bio"
+            className="text-green-700 font-semibold hover:underline"
+          >
+            Profile
+          </Link>
+          <Link
+            href="/make-post"
+            className="text-green-700 font-semibold hover:underline"
+          >
+            Make a Post
+          </Link>
         </div>
       </div>
     </div>
