@@ -16,7 +16,7 @@ export default function ItemCard({ users, listing, userInfo }) {
           <CardDescription></CardDescription>
         </CardHeader>
         <CardContent>
-          <img src={listing.photo} alt="Item Image" />
+          <img src={listing.photo} alt="Item Image" width="200" height="200"/>
           <p>Price: ${listing.price}</p>
           <p>{listing.description}</p>
         </CardContent>
