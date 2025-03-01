@@ -5,13 +5,20 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 import { useState } from "react";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import ItemCard from "@/components/itemCard/ItemCard";
+import NavbarAUTH from "@/components/NavbarAUTH";
 
 export default function MakePost() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -35,7 +42,7 @@ export default function MakePost() {
   };
 
   const handleTagsChange = (e) => {
-    const tagsArray = e.target.value.split(",").map(tag => tag.trim());
+    const tagsArray = e.target.value.split(",").map((tag) => tag.trim());
     setFormData((prevData) => ({
       ...prevData,
       tags: tagsArray,
@@ -50,10 +57,10 @@ export default function MakePost() {
 
   return (
     <>
-    <Navbar setSearchTerm={setSearchTerm} />
+      <NavbarAUTH setSearchTerm={setSearchTerm} />
       <div className="container mx-auto p-6">
         <h1 className="text-2xl font-bold mb-6">Create New Listing</h1>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Card>
             <CardHeader>
@@ -71,7 +78,7 @@ export default function MakePost() {
                     required
                   />
                 </div>
-                
+
                 <div>
                   <Label htmlFor="imgURL">Image URL</Label>
                   <Input
@@ -82,7 +89,7 @@ export default function MakePost() {
                     placeholder="https://example.com/image.jpg"
                   />
                 </div>
-                
+
                 <div>
                   <Label htmlFor="value">Price ($)</Label>
                   <Input
@@ -94,7 +101,7 @@ export default function MakePost() {
                     required
                   />
                 </div>
-                
+
                 <div>
                   <Label htmlFor="itemDescrip">Description</Label>
                   <Textarea
@@ -105,7 +112,7 @@ export default function MakePost() {
                     rows={4}
                   />
                 </div>
-                
+
                 <div>
                   <Label htmlFor="tags">Tags (comma separated)</Label>
                   <Input
@@ -115,9 +122,13 @@ export default function MakePost() {
                     onChange={handleTagsChange}
                   />
                 </div>
-                
+
                 <div className="flex justify-between">
-                  <Button type="button" variant="outline" onClick={() => setPreviewVisible(!previewVisible)}>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    onClick={() => setPreviewVisible(!previewVisible)}
+                  >
                     {previewVisible ? "Hide Preview" : "Show Preview"}
                   </Button>
                   <Link href="/home">
@@ -134,22 +145,35 @@ export default function MakePost() {
               </CardHeader>
               <CardContent>
                 {formData.imgURL && (
-                  <img 
-                    src={formData.imgURL} 
-                    alt="Item Preview" 
+                  <img
+                    src={formData.imgURL}
+                    alt="Item Preview"
                     className="w-full h-48 object-cover mb-4 rounded-md"
-                    onError={(e) => e.target.src = "https://via.placeholder.com/300x200?text=Image+Not+Found"}
+                    onError={(e) =>
+                      (e.target.src =
+                        "https://via.placeholder.com/300x200?text=Image+Not+Found")
+                    }
                   />
                 )}
                 <p className="font-medium">Price: ${formData.value || "0"}</p>
-                <p className="mt-2">{formData.itemDescrip || "No description provided."}</p>
+                <p className="mt-2">
+                  {formData.itemDescrip || "No description provided."}
+                </p>
                 {formData.tags.length > 0 && (
                   <div className="mt-4">
                     <p className="text-sm text-gray-500">Tags:</p>
                     <div className="flex flex-wrap gap-1 mt-1">
-                      {formData.tags.map((tag, index) => (
-                        tag && <span key={index} className="bg-gray-100 px-2 py-1 text-xs rounded">{tag}</span>
-                      ))}
+                      {formData.tags.map(
+                        (tag, index) =>
+                          tag && (
+                            <span
+                              key={index}
+                              className="bg-gray-100 px-2 py-1 text-xs rounded"
+                            >
+                              {tag}
+                            </span>
+                          )
+                      )}
                     </div>
                   </div>
                 )}
@@ -164,4 +188,3 @@ export default function MakePost() {
     </>
   );
 }
-
