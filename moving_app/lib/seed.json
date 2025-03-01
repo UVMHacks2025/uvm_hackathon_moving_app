@@ -1,0 +1,137 @@
+   
+{
+    "users": [
+      {
+        "name": "test",
+        "email": "test@gmail.com",
+        "id": 1234,
+        "bio": "A person",
+        "savedItems": ["item1", "item2", "item3", "item4"]
+      },
+      {
+        "name": "john_doe",
+        "email": "john.doe@gmail.com",
+        "id": 5678,
+        "bio": "An avid shopper",
+        "savedItems": ["item5", "item6"]
+      },
+      {
+        "name": "mary_smith",
+        "email": "mary.smith@yahoo.com",
+        "id": 9101,
+        "bio": "Loves vintage furniture",
+        "savedItems": ["item2", "item8", "item9"]
+      },
+      {
+        "name": "alex_jones",
+        "email": "alex.jones@hotmail.com",
+        "id": 1122,
+        "bio": "A minimalist enthusiast",
+        "savedItems": ["item7", "item2", "item10"]
+      },
+      {
+        "name": "lucy_brown",
+        "email": "lucy.brown@outlook.com",
+        "id": 3344,
+        "bio": "Interior designer",
+        "savedItems": ["item1", "item6", "item5"]
+      }
+    ],
+    "items": [
+      {
+        "id": 1342,
+        "name": "chair",
+        "price": 100,
+        "tags": ["household", "well-used", "outdoors"],
+        "description": "A good chair",
+        "sellerId": 1234,
+        "photo": "https://tse3.mm.bing.net/th?id=OIP.UQa-dtVav1GDgX6Av23f_wHaKp&pid=Api&P=0&h=220"
+      },
+      {
+        "id": 1456,
+        "name": "table",
+        "price": 150,
+        "tags": ["household", "new", "indoor"],
+        "description": "A sturdy table",
+        "sellerId": 5678,
+        "photo": "https://tse3.mm.bing.net/th?id=OIP.1234567&pid=Api&P=0&h=220"
+      },
+      {
+        "id": 1789,
+        "name": "sofa",
+        "price": 350,
+        "tags": ["living-room", "comfortable", "modern"],
+        "description": "A cozy sofa",
+        "sellerId": 9101,
+        "photo": "https://tse3.mm.bing.net/th?id=OIP.2345678&pid=Api&P=0&h=220"
+      },
+      {
+        "id": 1910,
+        "name": "lamp",
+        "price": 50,
+        "tags": ["lighting", "decorative", "modern"],
+        "description": "A stylish lamp",
+        "sellerId": 1234,
+        "photo": "https://tse3.mm.bing.net/th?id=OIP.3456789&pid=Api&P=0&h=220"
+      },
+      {
+        "id": 2021,
+        "name": "bookshelf",
+        "price": 120,
+        "tags": ["furniture", "wooden", "indoor"],
+        "description": "A wooden bookshelf",
+        "sellerId": 5678,
+        "photo": "https://tse3.mm.bing.net/th?id=OIP.4567890&pid=Api&P=0&h=220"
+      }
+    ],
+    "tags": [
+      {
+        "value": "household",
+        "householdItems": [1342, 1456]
+      },
+      {
+        "value": "well-used",
+        "householdItems": [1342]
+      },
+      {
+        "value": "outdoors",
+        "householdItems": [1342]
+      },
+      {
+        "value": "new",
+        "householdItems": [1456]
+      },
+      {
+        "value": "living-room",
+        "householdItems": [1789]
+      },
+      {
+        "value": "comfortable",
+        "householdItems": [1789]
+      },
+      {
+        "value": "modern",
+        "householdItems": [1789, 1910]
+      },
+      {
+        "value": "lighting",
+        "householdItems": [1910]
+      },
+      {
+        "value": "decorative",
+        "householdItems": [1910]
+      },
+      {
+        "value": "furniture",
+        "householdItems": [2021]
+      },
+      {
+        "value": "wooden",
+        "householdItems": [2021]
+      },
+      {
+        "value": "indoor",
+        "householdItems": [1456, 2021]
+      }
+    ]
+  }
