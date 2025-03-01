@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "name": "Couch",
+        "value": 100,
+        "imgURL": "https://t4.ftcdn.net/jpg/00/29/79/51/360_F_29795157_gLLeeTiFDsqno207woilLAq0jeOyOqdu.jpg",
+        "owner": "Anna",
+        "itemDescrip": "This is a couch."
+    },
+    {
+        "id": 2,
+        "name": "Chair",
+        "value": 50,
+        "imgURL": "https://t4.ftcdn.net/jpg/03/21/42/87/360_F_321428779_l8oQrLjoqZM5TIW22IAapbpOg0wgKufw.jpg",
+        "owner": "Quinn",
+        "itemDescrip": "This is a chair."
+    }
+
+]
